@@ -1,0 +1,34 @@
+import { OnInit, EventEmitter } from '@angular/core';
+import { FormDiaplyMode, FormHeader, FormDescription, FormTitleIconPosition } from '../../model';
+import { Field, TextField, InputField, DropdownField, ImageField, CalendarField, AutocompleteField, CheckboxField, FileField, RadioField, SliderField, ToggleField, FieldChange, HtmlEditorField, LabelField } from '../../../field/model';
+import { Button } from '../../../button/model';
+import { FormGroup } from '@angular/forms';
+import { Ability } from '@casl/ability';
+export declare class FormHeaderComponent implements OnInit {
+    private ability;
+    form: FormGroup;
+    formHeaderConfig: FormHeader;
+    description: FormDescription;
+    formDisplayMode: FormDiaplyMode;
+    formIdentifier: string;
+    sourceIndex: number;
+    widgetArrayIndex: number;
+    originalData: any;
+    context: any;
+    formActions: Array<Field | TextField | LabelField | InputField | DropdownField | HtmlEditorField | ImageField | CalendarField | AutocompleteField | CheckboxField | FileField | RadioField | SliderField | ToggleField | Button>;
+    onFieldChange: EventEmitter<any>;
+    onButtonClick: EventEmitter<any>;
+    title: string;
+    subtitle: string;
+    iconPosition: FormTitleIconPosition;
+    fields: Array<Field | TextField | LabelField | InputField | DropdownField | HtmlEditorField | ImageField | CalendarField | AutocompleteField | CheckboxField | FileField | RadioField | SliderField | ToggleField>;
+    buttons: Array<Button>;
+    constructor(ability: Ability);
+    ngOnInit(): void;
+    getFormHeader(): void;
+    setIconPosition(): void;
+    saperateFormActions(): void;
+    initFormGroup(): void;
+    fieldChange(fieldChange: FieldChange): void;
+    buttonClick(event: any): void;
+}

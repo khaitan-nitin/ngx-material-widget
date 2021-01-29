@@ -1,0 +1,9 @@
+export * from './action-page.model';
+export * from './crud.model';
+// import { ActionPage } from './action-page.model';
+// import { Crud } from './crud.model';
+// export {
+//   ActionPage,
+//   Crud 
+// };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL25pdGlua2hhaXRhbi9OaXRpbi9zdHVkeS9hbmd1bGFyL21hdGVyaWFsL2FkbWluLWJ1aWxkZXItcGx1Z2luL3Byb2plY3RzL25neC1tYXRlcmlhbC13aWRnZXQvc3JjLyIsInNvdXJjZXMiOlsibGliL2NydWQvbW9kZWwvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsY0FBYyxxQkFBcUIsQ0FBQztBQUNwQyxjQUFjLGNBQWMsQ0FBQztBQUU3QixvREFBb0Q7QUFDcEQsdUNBQXVDO0FBRXZDLFdBQVc7QUFDWCxnQkFBZ0I7QUFDaEIsVUFBVTtBQUNWLEtBQUsiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tICcuL2FjdGlvbi1wYWdlLm1vZGVsJztcbmV4cG9ydCAqIGZyb20gJy4vY3J1ZC5tb2RlbCc7XG5cbi8vIGltcG9ydCB7IEFjdGlvblBhZ2UgfSBmcm9tICcuL2FjdGlvbi1wYWdlLm1vZGVsJztcbi8vIGltcG9ydCB7IENydWQgfSBmcm9tICcuL2NydWQubW9kZWwnO1xuXG4vLyBleHBvcnQge1xuLy8gICBBY3Rpb25QYWdlLFxuLy8gICBDcnVkIFxuLy8gfTtcbiJdfQ==

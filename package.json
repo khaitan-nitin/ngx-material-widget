@@ -1,0 +1,69 @@
+{
+  "name": "ngx-material-widget",
+  "version": "0.0.2",
+  "description": "Admin Builder is a plugin that helps to build customizable UI components. It currently supports UI components like List, Form and CRUD. All these components are built completely configurable.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaitan-nitin/ngx-material-widget"
+  },
+  "author": "Nitin Khaitan",
+  "people": {
+    "name": "Nitin Khaitan",
+    "email": "khaitan.nitin@gmail.com",
+    "url": "https://www.linkedin.com/in/nitin-khaitan/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khaitan-nitin/ngx-material-widget/issues"
+  },
+  "homepage": "https://github.com/khaitan-nitin/ngx-material-widget#readme",
+  "keywords": [
+    "angularjs",
+    "angular",
+    "material",
+    "widget",
+    "javascript",
+    "datatable",
+    "grid",
+    "table",
+    "form",
+    "field",
+    "textbox",
+    "textarea",
+    "password",
+    "color",
+    "month",
+    "week",
+    "number",
+    "time",
+    "calendar",
+    "slider",
+    "toggle",
+    "checkbox",
+    "radio",
+    "autocomplete",
+    "dropdown",
+    "image",
+    "upload",
+    "htmleditor",
+    "json",
+    "chip",
+    "paragraph",
+    "button"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7"
+  },
+  "main": "bundles/ngx-material-widget.umd.js",
+  "module": "fesm2015/ngx-material-widget.js",
+  "es2015": "fesm2015/ngx-material-widget.js",
+  "esm2015": "esm2015/ngx-material-widget.js",
+  "fesm2015": "fesm2015/ngx-material-widget.js",
+  "typings": "ngx-material-widget.d.ts",
+  "metadata": "ngx-material-widget.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}
