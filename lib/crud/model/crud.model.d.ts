@@ -4,7 +4,6 @@ import { List, Record } from '../../list/model';
 import { Form, FormTitleIconPosition } from '../../form/model';
 import { Badge } from '../../button/model';
 import { Wizard } from '../../wizard/model/wizard.model';
-import { Template } from '@angular/compiler/src/render3/r3_ast';
 import { ControlPermission } from '../../privilege/model';
 import { DependentOnField } from '../../field/model';
 export interface CrudDescription {
@@ -39,7 +38,6 @@ export interface CrudWidget {
     widgetType: CrudWidgetType;
     rowSpan: number;
     colSpan: number;
-    displayOnAction: string;
     badge?: Badge;
     dependentOnFields?: Array<DependentOnField>;
     multiple?: {
@@ -52,8 +50,7 @@ export interface CrudTab {
     identifier: string;
     label: string;
     description?: CrudDescription;
-    statistic: string;
-    displayOnAction: string;
+    statistic?: string;
     actions?: Array<Button>;
     widgets: Array<CrudWidget>;
     customPlugin?: CrudCustomPlugin;
@@ -110,7 +107,7 @@ export interface Crud {
     search?: CrudSearch;
     list?: CrudList;
     modal?: CrudModal;
-    template?: Template;
+    template?: any;
 }
 export interface CrudModal {
     width?: number;

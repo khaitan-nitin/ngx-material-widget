@@ -1,6 +1,5 @@
 import { Form } from '../../form/model';
 import { List } from '../../list/model';
-import { Template } from '@angular/compiler/src/render3/r3_ast';
 export declare const enum OrientationType {
     HORIZONTAL = "HORIZONTAL",
     VERTICAL = "VERTICAL"
@@ -23,7 +22,7 @@ export interface Wizard {
     description?: WizardDescription;
     pageBackRoute: Array<string>;
     orientation: OrientationType;
-    template?: Template;
+    template?: any;
     linear: boolean;
     disableStepNavigation: boolean;
     steps: Array<WizardStep>;

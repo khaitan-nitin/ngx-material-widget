@@ -74,9 +74,16 @@ export interface Form {
 export interface FormModal {
     width?: number;
 }
+export declare const enum FormHelpPosition {
+    left = "left",
+    right = "right",
+    below = "below",
+    above = "above"
+}
 export interface FormHelp {
     icon: string;
     message: string;
+    position: FormHelpPosition;
 }
 export interface FormLayout {
     sectionLabel?: string;

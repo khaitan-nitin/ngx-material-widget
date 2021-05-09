@@ -46,6 +46,9 @@ export interface CustomLayoutCell {
     displayInline?: {
         separator: string;
     };
+    fieldStyle?: {
+        class: CellControllFieldClass;
+    };
     textColor?: Function;
     bgColor?: Function;
 }
@@ -56,6 +59,10 @@ export interface CellControl {
     fullWidth?: boolean;
     fieldStyle?: {
         class: CellControllFieldClass;
+    };
+    alignment?: {
+        horizontal: HorizantalAlignment;
+        vertical: VerticalAlignment;
     };
     cControlIndex?: number;
     type: CellControllType;
@@ -68,4 +75,16 @@ export declare const enum CellControllFieldClass {
 export declare const enum CellControllType {
     FIELD = "FIELD",
     BUTTON = "BUTTON"
+}
+export declare const enum HorizantalAlignment {
+    NONE = "none",
+    LEFT = "left",
+    CENTER = "center",
+    RIGHT = "right"
+}
+export declare const enum VerticalAlignment {
+    NONE = "none",
+    TOP = "top",
+    MIDDLE = "middle",
+    BOTTOM = "bottom"
 }

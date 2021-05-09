@@ -4,6 +4,7 @@ import { Button, ObjectTree, ButtonGroup, HoverButton } from '../../model';
 import { ButtonGroupList, HoverButtonList } from '../../model/button-group.model';
 import { FormDiaplyMode } from '../../../form/model';
 import { Ability } from '@casl/ability';
+import * as ɵngcc0 from '@angular/core';
 export declare class ButtonGroupComponent implements OnInit {
     private ability;
     form: FormGroup;
@@ -42,4 +43,8 @@ export declare class ButtonGroupComponent implements OnInit {
     isButtonArray(buttonList: Array<Button> | ButtonGroupList | HoverButtonList): boolean;
     click(event: any): void;
     iconClick(event: any): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<ButtonGroupComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<ButtonGroupComponent, "mx-button-group", never, { "buttons": "buttons"; "_buttons": "_buttons"; "form": "form"; "formDisplayMode": "formDisplayMode"; "sourceIdentifier": "sourceIdentifier"; "sourceIndex": "sourceIndex"; "widgetArrayIndex": "widgetArrayIndex"; "context": "context"; "originalData": "originalData"; "buttonRoute": "buttonRoute"; "parentHierarchy": "parentHierarchy"; "disabled": "disabled"; }, { "onClick": "onClick"; "onIconClick": "onIconClick"; }, never, never>;
 }
+
+//# sourceMappingURL=button-group.component.d.ts.map

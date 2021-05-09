@@ -6,6 +6,7 @@ import { Subscription } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormDiaplyMode } from '../../../form/model';
 import { Ability } from '@casl/ability';
+import * as ɵngcc0 from '@angular/core';
 export declare class ButtonComponent implements OnInit, OnDestroy {
     dialog: MatDialog;
     private router;
@@ -68,4 +69,8 @@ export declare class ButtonComponent implements OnInit, OnDestroy {
     setGroupButton(): void;
     setMenuButton(): void;
     ngOnDestroy(): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<ButtonComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<ButtonComponent, "mx-button", never, { "button": "button"; "_button": "_button"; "label": "label"; "context": "context"; "form": "form"; "formDisplayMode": "formDisplayMode"; "sourceIdentifier": "sourceIdentifier"; "sourceIndex": "sourceIndex"; "widgetArrayIndex": "widgetArrayIndex"; "identifier": "identifier"; "originalData": "originalData"; "buttonRoute": "buttonRoute"; "parentHierarchy": "parentHierarchy"; "disabled": "disabled"; }, { "onClick": "onClick"; "onIconClick": "onIconClick"; }, never, never>;
 }
+
+//# sourceMappingURL=button.component.d.ts.map

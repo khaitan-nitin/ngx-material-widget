@@ -3,19 +3,17 @@ export interface NavigationPannel {
     templateKey: string;
     canCollapse: boolean;
     defaultCollapse: boolean;
-    header: NavigationPannelHeader;
+    header?: NavigationPannelHeader;
     navigations: Array<Navigation>;
     footer: NavigationPannelFooter;
 }
 export interface NavigationPannelHeader {
-    logo: boolean;
-    profile: boolean;
-    notification: boolean;
+    logo: Logo;
     template?: any;
 }
 export interface Logo {
-    name: string;
-    image: string;
+    name?: string;
+    image?: string;
 }
 export interface NavigationPannelFooter {
     logout: boolean;

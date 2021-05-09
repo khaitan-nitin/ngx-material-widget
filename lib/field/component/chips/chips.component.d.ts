@@ -10,6 +10,7 @@ import { FieldComponent } from '../field/field.component';
 import { Ability } from '@casl/ability';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import * as ɵngcc0 from '@angular/core';
 export declare class ChipsComponent extends FieldComponent implements OnInit {
     router: Router;
     ability: Ability;
@@ -54,4 +55,8 @@ export declare class ChipsComponent extends FieldComponent implements OnInit {
         error: string;
         message: string;
     }>;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<ChipsComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<ChipsComponent, "mx-chips", never, { "field": "field"; "disabled": "disabled"; "formControl": "formControl"; "errorMatcher": "errorMatcher"; }, { "onListChange": "onListChange"; }, never, never>;
 }
+
+//# sourceMappingURL=chips.component.d.ts.map

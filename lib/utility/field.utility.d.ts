@@ -1,6 +1,7 @@
 import { Field, AutocompleteField, CheckboxField, RadioField, DropdownField, KeyMap } from '../field/model';
 import { FormDiaplyMode } from '../form/model';
 export declare class FieldUtils {
+    static isFormDisable(displayMode: FormDiaplyMode): boolean;
     static isFieldDisabled(field: Field, currentDisplayMode: FormDiaplyMode, value: string | Array<string>): boolean;
     static displayEllipsis(charLimit: number, value: any): boolean;
     static readOnlyField(): Array<string>;

@@ -1,4 +1,5 @@
 import { OnChanges, ComponentRef, ViewContainerRef, Compiler } from '@angular/core';
+import * as ɵngcc0 from '@angular/core';
 export declare class cfTemplateDirective implements OnChanges {
     private vcRef;
     private compiler;
@@ -11,4 +12,8 @@ export declare class cfTemplateDirective implements OnChanges {
     updateProperties(): void;
     private createDynamicComponent;
     private createDynamicModule;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<cfTemplateDirective, never>;
+    static ɵdir: ɵngcc0.ɵɵDirectiveDefWithMeta<cfTemplateDirective, "[cfTemplate]", never, { "cfTemplate": "cfTemplate"; "cfTemplateContext": "cfTemplateContext"; "currentComponent": "currentComponent"; }, {}, never>;
 }
+
+//# sourceMappingURL=compile.directive.d.ts.map

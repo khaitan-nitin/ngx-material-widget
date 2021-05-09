@@ -4,6 +4,7 @@ import { List } from '../../../list/model';
 import { KeyMap, FieldChange } from '../../../field/model';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Ability } from '@casl/ability';
+import * as ɵngcc0 from '@angular/core';
 export interface DialogData {
     type: string;
     widgetConfig: Form | List;
@@ -27,4 +28,8 @@ export declare class ModalComponent implements OnInit {
     fieldChange(fieldChange: FieldChange): void;
     formChange(form: any): void;
     buttonClick(event: any): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<ModalComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<ModalComponent, "mx-modal", never, {}, { "onFormChange": "onFormChange"; "onFieldChange": "onFieldChange"; "onButtonClick": "onButtonClick"; }, never, never>;
 }
+
+//# sourceMappingURL=modal.component.d.ts.map

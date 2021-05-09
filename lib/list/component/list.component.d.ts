@@ -11,6 +11,7 @@ import { MatSort } from '@angular/material/sort';
 import { SelectionModel } from '@angular/cdk/collections';
 import { Ability } from '@casl/ability';
 import { Subscription } from 'rxjs';
+import * as ɵngcc0 from '@angular/core';
 export declare class ListComponent implements OnInit, OnDestroy {
     ability: Ability;
     breakpointObserver: BreakpointObserver;
@@ -43,6 +44,7 @@ export declare class ListComponent implements OnInit, OnDestroy {
     set contentPage(pagination: MatPaginator);
     set contentSort(sort: MatSort);
     cellCount: number;
+    isCustomTemplate: boolean;
     isMobile: boolean;
     isTablet: boolean;
     isDesktop: boolean;
@@ -74,10 +76,12 @@ export declare class ListComponent implements OnInit, OnDestroy {
     hoverRowIndex: number;
     showCard: boolean;
     iconPosition: FormTitleIconPosition;
+    selectableAdded: boolean;
     breakpointSubscription: Subscription;
     constructor(ability: Ability, breakpointObserver: BreakpointObserver);
     ngOnInit(): void;
     init(): void;
+    setCustomTemplate(): void;
     sortDirection: 'asc' | 'desc' | '';
     sticky(): void;
     onScrolled(event: any): void;
@@ -129,4 +133,8 @@ export declare class ListComponent implements OnInit, OnDestroy {
     };
     onHover(event: any, rowIndex: any, row: any): void;
     ngOnDestroy(): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<ListComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<ListComponent, "mx-list", never, { "listConfig": "listConfig"; "_listConfig": "_listConfig"; "record": "record"; "_record": "_record"; "listReset": "listReset"; "_listReset": "_listReset"; "expanded": "expanded"; "sourceIdentifier": "sourceIdentifier"; "sourceIndex": "sourceIndex"; "widgetArrayIndex": "widgetArrayIndex"; "originalData": "originalData"; "parent": "parent"; "disabled": "disabled"; "keyMap": "keyMap"; "expandRowIndex": "expandRowIndex"; }, { "onFormChange": "onFormChange"; "onFieldChange": "onFieldChange"; "onButtonClick": "onButtonClick"; "onPageChange": "onPageChange"; "onSortChange": "onSortChange"; }, never, never>;
 }
+
+//# sourceMappingURL=list.component.d.ts.map

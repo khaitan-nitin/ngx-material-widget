@@ -1,0 +1,1 @@
+{"version":3,"file":"ngInit.directive.d.ts","sources":["ngInit.directive.d.ts"],"names":[],"mappings":"AAAA;;AACA;AACA;AACA;;;AACA","sourcesContent":["import { EventEmitter } from '@angular/core';\nexport declare class NgInit {\n    ngInit: EventEmitter<any>;\n    ngOnInit(): void;\n}\n"]}

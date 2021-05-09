@@ -6,10 +6,13 @@ import { FormGroup } from '@angular/forms';
 import { Action } from '../../../button/model';
 import { Ability } from '@casl/ability';
 import { Subscription } from 'rxjs';
+import * as ɵngcc0 from '@angular/core';
 export declare class FormComponent implements OnInit, OnDestroy {
     private ability;
     private breakpointObserver;
-    formConfig: Form;
+    _formConfig: Form;
+    get formConfig(): any;
+    set formConfig(_formConfig: any);
     sourceIdentifier: string;
     sourceIndex: number;
     widgetArrayIndex: number;
@@ -39,8 +42,10 @@ export declare class FormComponent implements OnInit, OnDestroy {
     formButton: FormButton;
     formButtonLayout: FormButtonLayout;
     breakpointSubscription: Subscription;
+    formInitialized: boolean;
     constructor(ability: Ability, breakpointObserver: BreakpointObserver);
     ngOnInit(): void;
+    init(): void;
     getCustomLayout(): void;
     getActions(): void;
     dependentFieldChange(action: Action): void;
@@ -58,4 +63,8 @@ export declare class FormComponent implements OnInit, OnDestroy {
     resetDisplayInColumn(): void;
     getNewDisplayInColumn(device: string, displayInColumn: number): number;
     ngOnDestroy(): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<FormComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<FormComponent, "mx-form", never, { "formConfig": "formConfig"; "_formConfig": "_formConfig"; "supportingRecord": "supportingRecord"; "record": "record"; "originalData": "originalData"; "reset": "reset"; "form": "form"; "sourceIdentifier": "sourceIdentifier"; "sourceIndex": "sourceIndex"; "widgetArrayIndex": "widgetArrayIndex"; "keyMap": "keyMap"; }, { "onFormChange": "onFormChange"; "onFieldChange": "onFieldChange"; "onButtonClick": "onButtonClick"; }, never, never>;
 }
+
+//# sourceMappingURL=form.component.d.ts.map

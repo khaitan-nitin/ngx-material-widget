@@ -11,6 +11,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { MatSelectionList, MatSelectionListChange } from '@angular/material/list';
 import { Permission } from '../../../privilege/model';
 import { Ability } from '@casl/ability';
+import * as ɵngcc0 from '@angular/core';
 export declare class FieldErrorStateMatcher implements ErrorStateMatcher {
     isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean;
 }
@@ -166,4 +167,8 @@ export declare class FieldComponent implements OnInit {
     addRemoveButton(identifier: string, label: string, icon: string): Button;
     onFileComplete(data: any): void;
     onListImageLoadError: ($event: any) => void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<FieldComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<FieldComponent, "mx-field", never, { "displayMode": "displayMode"; "_displayMode": "_displayMode"; "sourceType": "sourceType"; "sourceIdentifier": "sourceIdentifier"; "sourceIndex": "sourceIndex"; "widgetArrayIndex": "widgetArrayIndex"; "form": "form"; "fieldControl": "fieldControl"; "fieldIndex": "fieldIndex"; "field": "field"; "originalData": "originalData"; "hideLabel": "hideLabel"; "value": "value"; "isAddMore": "isAddMore"; "addMorePermission": "addMorePermission"; "device": "device"; "displayInColumns": "displayInColumns"; "dependencies": "dependencies"; "row": "row"; "keyMap": "keyMap"; }, { "onDependentFieldChange": "onDependentFieldChange"; "onFieldChange": "onFieldChange"; "onFormChange": "onFormChange"; "onButtonClick": "onButtonClick"; }, never, never>;
 }
+
+//# sourceMappingURL=field.component.d.ts.map

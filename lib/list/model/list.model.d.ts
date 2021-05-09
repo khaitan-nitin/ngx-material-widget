@@ -16,10 +16,6 @@ export declare const enum ListSortOrder {
     asc = "asc",
     desc = "desc"
 }
-export interface ListSelectable {
-    label: string;
-    icon: string;
-}
 export interface ListSort {
     column: string;
     order: ListSortOrder;
@@ -45,7 +41,7 @@ export interface ListHeader {
         path?: string;
         position?: FormTitleIconPosition;
     };
-    actions?: Array<Button>;
+    actions?: Array<Button | ButtonGroup>;
 }
 export interface List {
     identifier: string;
@@ -57,7 +53,7 @@ export interface List {
     hasColumnSelection: boolean;
     uniqueKeys?: Array<string>;
     columns: Array<Column>;
-    selectable?: ListSelectable;
+    selectable?: Array<Button | ButtonGroup>;
     defaultSort?: ListSort;
     actionWidth?: number;
     actions: Array<Button | ButtonGroup>;
@@ -66,6 +62,7 @@ export interface List {
     rowTextColor?: Function;
     rowBgColor?: Function;
     row?: TableRow;
+    noRecordFound?: string;
     pagination: PaginationType;
     pageSize?: number;
     child?: ChildRecord;

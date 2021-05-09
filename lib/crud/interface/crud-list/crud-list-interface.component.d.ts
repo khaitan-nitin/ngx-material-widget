@@ -3,6 +3,7 @@ import { CrudHeader, ActionPage, CrudList, CrudListData, Crud, CrudSearch, CrudT
 import { Button, Badge, Action } from '../../../button/model';
 import { KeyMap } from '../../../field/model';
 import { FormDiaplyMode } from '../../../form/model';
+import * as ɵngcc0 from '@angular/core';
 export declare class CrudListComponentInterface implements OnInit {
     identifier: string;
     header: CrudHeader;
@@ -52,4 +53,8 @@ export declare class CrudListComponentInterface implements OnInit {
     afterChildChangeMerge(): void;
     setHeaderTitle(title: string): void;
     setHeaderDescription(description: string): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<CrudListComponentInterface, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<CrudListComponentInterface, "mx-crud-list-interface", never, {}, {}, never, never>;
 }
+
+//# sourceMappingURL=crud-list-interface.component.d.ts.map

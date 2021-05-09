@@ -7,6 +7,7 @@ import { Ability } from '@casl/ability';
 import { CrudHeader, CrudList, CrudSearch, ActionPage, CrudListData } from '../../model';
 import { MatSidenav } from '@angular/material/sidenav';
 import { MatBottomSheetRef, MatBottomSheet } from '@angular/material/bottom-sheet';
+import * as ɵngcc0 from '@angular/core';
 export declare class CrudListComponent implements OnInit, OnDestroy {
     private _bottomSheet;
     private ability;
@@ -72,6 +73,8 @@ export declare class CrudListComponent implements OnInit, OnDestroy {
     openBottomSheet(): void;
     ngOnDestroy(): void;
     bottomUnsubscribe(): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<CrudListComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<CrudListComponent, "mx-crud-list", never, { "configData": "configData"; "_configData": "_configData"; "expanded": "expanded"; "identifier": "identifier"; "header": "header"; "actions": "actions"; "actionPages": "actionPages"; "quickLinks": "quickLinks"; "searchConfig": "searchConfig"; "listConfig": "listConfig"; "formReset": "formReset"; "originalData": "originalData"; "keyMap": "keyMap"; "listReset": "listReset"; "expandRowIndex": "expandRowIndex"; }, { "onFormChange": "onFormChange"; "onFieldChange": "onFieldChange"; "onButtonClick": "onButtonClick"; "onButtonIconClick": "onButtonIconClick"; "onSortClick": "onSortClick"; "onPageClick": "onPageClick"; "onTabClick": "onTabClick"; }, never, never>;
 }
 export declare class BottomSearchSheet {
     private _bottomSheetRef;
@@ -84,4 +87,8 @@ export declare class BottomSearchSheet {
     fieldChange(fieldChange: FieldChange): void;
     formChange(form: any): void;
     buttonClick(event: any): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<BottomSearchSheet, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<BottomSearchSheet, "bottom-search-sheet", never, {}, { "onFieldChange": "onFieldChange"; "onButtonClick": "onButtonClick"; }, never, never>;
 }
+
+//# sourceMappingURL=crud-list.component.d.ts.map

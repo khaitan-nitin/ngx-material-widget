@@ -90,6 +90,7 @@ export interface Field {
     dependentOnFields?: Array<DependentOnField>;
     validations?: Array<Validation>;
     displayMode?: DisplayMode;
+    alwaysEnable?: boolean;
     permission?: ControlPermission;
 }
 export interface AppearanceField {

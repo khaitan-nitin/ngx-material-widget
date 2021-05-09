@@ -4,6 +4,7 @@ import { FieldChange } from '../../model';
 import { FieldComponent } from '../field/field.component';
 import { ParagraphField, TokenType } from '../../model/paragraph.model';
 import { Ability } from '@casl/ability';
+import * as ɵngcc0 from '@angular/core';
 export declare class ParagraphComponent extends FieldComponent implements OnInit {
     router: Router;
     ability: Ability;
@@ -16,4 +17,8 @@ export declare class ParagraphComponent extends FieldComponent implements OnInit
     isButtonDisable(): boolean;
     getFormValue(): any;
     buttonClick(event: any): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<ParagraphComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<ParagraphComponent, "mx-paragraph", never, {}, { "onButtonClick": "onButtonClick"; }, never, never>;
 }
+
+//# sourceMappingURL=paragraph.component.d.ts.map
